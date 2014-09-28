@@ -3,6 +3,8 @@ package de.endrullis.sta.exmaples
 import de.endrullis.sta._
 
 /**
+ * Small example showing the animation of flying letters ("Scala Tikz Animations").
+ *
  * @author Stefan Endrullis &lt;stefan@endrullis.de&gt;
  */
 object Tutorial extends ScalaTikzAni {
