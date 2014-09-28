@@ -20,10 +20,21 @@
     </license>
   </licenses>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<scala.version>2.11.2</scala.version>
-	</properties>
+  <issueManagement>
+    <url>https://github.com/xylo/scala-tikz-animations/issues-examples</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <scm>
+    <url>https://github.com/xylo/scala-tikz-animations-examples</url>
+    <connection>scm:git:git://github.com/xylo/scala-tikz-animations-examples.git</connection>
+    <developerConnection>scm:git:git@github.com:xylo/scala-tikz-animations-examples.git</developerConnection>
+  </scm>
+
+  <properties>
+ 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ 		<scala.version>2.11.2</scala.version>
+ 	</properties>
 
 	<repositories>
 		<repository>
