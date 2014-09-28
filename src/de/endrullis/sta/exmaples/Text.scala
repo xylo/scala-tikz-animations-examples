@@ -1,4 +1,4 @@
-package staex
+package de.endrullis.sta.exmaples
 
 import de.endrullis.sta.{Pos, Generator}
 import de.endrullis.sta.BaseVarIC._
