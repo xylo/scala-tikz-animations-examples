@@ -58,6 +58,6 @@ object HappyBirthdayRena extends ScalaTikzAni {
 		add(vi"\node[opacity=$op, mycolor, rotate=$rotate] at $pos {$s};")
 	}
 
-	animateNotInLine("test/rena", SlideOptions(options = "width=13cm,autoplay,loop", frameRate = 30))
+	animateNotInLine("gen/rena", SlideOptions(options = "width=13cm,autoplay,loop", frameRate = 30))
 
 }
