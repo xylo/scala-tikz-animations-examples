@@ -1,0 +1,19 @@
+\documentclass{beamer}
+
+\usepackage{tikz}
+\usepackage{animate}
+
+\begin{document}
+
+{ % all template changes are local to this group.
+  \setbeamertemplate{navigation symbols}{}
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[at=(current page.center)] {
+${FRAME_CONTENT}
+      };
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\end{document}

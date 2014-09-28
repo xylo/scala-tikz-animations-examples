@@ -1,0 +1,11 @@
+\documentclass{beamer}
+
+\usepackage{animate}
+
+\begin{document}
+
+\begin{frame}
+${FRAME_CONTENT}
+\end{frame}
+
+\end{document}

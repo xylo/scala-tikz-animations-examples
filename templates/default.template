@@ -1,0 +1,21 @@
+\documentclass{beamer}
+
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{xifthen}
+
+\usetikzlibrary{calc}
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+
+\begin{document}
+
+%BEGIN_FRAME
+\begin{tikzpicture}%
+  \path[use as bounding box] ${BB_POS1} rectangle ${BB_POS2};
+	%CODE
+\end{tikzpicture}
+%END_FRAME
+
+\end{document}
