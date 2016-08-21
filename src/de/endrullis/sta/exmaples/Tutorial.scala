@@ -19,13 +19,15 @@ object Tutorial extends ScalaTikzAni {
 """
 
 
-	// set default time map to linear
+	// set default time map to "linear"
 	implicit def timeMap[T] = TimeMap.linear[T]
-	// set position time map to sinus for natural movements
+	// set position time map to "decelerate" for natural movements
 	implicit def timeMapPos = TimeMap.decelerate[Pos]
 
+	// split our example text into letters so that we can animate each letter
 	val letters = Text.splitIntoLetters("Scala Tikz Animations")
 
+	// let the letters fly in, one after the other
 	for ((letter, i) <- letters.zipWithIndex) {
 		add(Text.node(letter, Pos(1,2.2) stay i.toDouble/letters.size changeTo Pos(0,1.2) in (TimeMap.decelerate, 1)))
 	}
@@ -36,6 +38,7 @@ object Tutorial extends ScalaTikzAni {
 
 	//add(Text.node(0 pause() changeTo 3 in 3 pause() changeTo 6 in 3))
 
+	// generate the pdf (gen/tutorial.pdf)
 	animateNotInLine("gen/tutorial", SlideOptions(options = "width=\\paperwidth,autoplay"))
 
 }
