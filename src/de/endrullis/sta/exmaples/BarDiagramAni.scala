@@ -3,6 +3,8 @@ package de.endrullis.sta.exmaples
 import de.endrullis.sta._
 
 /**
+ * This example animates the construction of a bar diagram.
+ *
  * @author Stefan Endrullis &lt;stefan@endrullis.de&gt;
  */
 object BarDiagramAni extends ScalaTikzAni {

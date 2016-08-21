@@ -11,30 +11,30 @@
 	<packaging>jar</packaging>
 	<name>Scala Tikz Animations</name>
 
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-      <comments>A business-friendly OSS license</comments>
-    </license>
-  </licenses>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 
-  <issueManagement>
-    <url>https://github.com/xylo/scala-tikz-animations/issues-examples</url>
-    <system>GitHub Issues</system>
-  </issueManagement>
+	<issueManagement>
+		<url>https://github.com/xylo/scala-tikz-animations/issues-examples</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
 
-  <scm>
-    <url>https://github.com/xylo/scala-tikz-animations-examples</url>
-    <connection>scm:git:git://github.com/xylo/scala-tikz-animations-examples.git</connection>
-    <developerConnection>scm:git:git@github.com:xylo/scala-tikz-animations-examples.git</developerConnection>
-  </scm>
+	<scm>
+		<url>https://github.com/xylo/scala-tikz-animations-examples</url>
+		<connection>scm:git:git://github.com/xylo/scala-tikz-animations-examples.git</connection>
+		<developerConnection>scm:git:git@github.com:xylo/scala-tikz-animations-examples.git</developerConnection>
+	</scm>
 
-  <properties>
- 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
- 		<scala.version>2.11.2</scala.version>
- 	</properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<scala.version>2.11.8</scala.version>
+	</properties>
 
 	<repositories>
 		<repository>
@@ -85,7 +85,6 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<testSourceDirectory>src-test</testSourceDirectory>
 		<plugins>
 			<!-- Scala compiler -->
 			<plugin>
@@ -94,17 +93,23 @@
 				<executions>
 					<execution>
 						<id>compile</id>
-						<goals><goal>compile</goal></goals>
+						<goals>
+							<goal>compile</goal>
+						</goals>
 						<phase>compile</phase>
 					</execution>
 					<execution>
 						<id>test-compile</id>
-						<goals><goal>testCompile</goal></goals>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
 						<phase>test-compile</phase>
 					</execution>
 					<execution>
 						<phase>process-resources</phase>
-						<goals><goal>compile</goal></goals>
+						<goals>
+							<goal>compile</goal>
+						</goals>
 					</execution>
 				</executions>
 				<configuration>
