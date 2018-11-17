@@ -51,7 +51,7 @@ object BarDiagramAni extends ScalaTikzAni {
 		}
 
 		for (i <- xIndices) {
-			add(bar(i) start (30+3*i) riseUpIn 10)
+			add(bar(i) start (20+i) riseUpIn 10)
 		}
 	})
 
